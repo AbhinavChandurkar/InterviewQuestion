@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    body{
+      background-color: hsl(212, 45%, 89%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .tile{
+      background-color: white;
+      height: 530px;
+      width: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .tile-qr{
+      background-color: rgb(44,126,250);
+      height: 270px;
+      width: 320px;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      border-radius: 10px;
+      position: absolute;
+      top: 20px;
+    }
+
+    .tile-text {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+    .tile {
+      height: calc(100vh - 40px); /* Subtract 40px for the top and bottom spacing */
+      width: calc(100vw - 40px); /* Subtract 40px for the left and right spacing */
+    }
+
+    .tile-qr {
+      height: calc(100% - 40px); /* Subtract 40px for the top and bottom spacing */
+      width: calc(100% - 40px); /* Subtract 40px for the left and right spacing */
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <div class="tile">
+    <div class="tile-qr">
+    </div>
+    <div class="tile-text">
+
+    </div>
+  </div>
+</body>
+</html>
