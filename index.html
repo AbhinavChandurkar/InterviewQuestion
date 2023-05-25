@@ -2,63 +2,40 @@
 <html lang="en">
 <head>
   <title>Frontend Mentor | QR code component</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <style>
     body{
-      background-color: hsl(212, 45%, 89%);
+      background-color:hsl(212, 45%, 89%);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
-    .tile{
-      background-color: white;
-      height: 530px;
-      width: 350px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .img-container {
+      padding: 10px;
       border-radius: 10px;
-      position: relative;
     }
-
-    .tile-qr{
-      background-color: rgb(44,126,250);
-      height: 270px;
-      width: 320px;
-      /* display: flex;
-      justify-content: center;
-      align-items: center; */
+    .img-container img {
       border-radius: 10px;
-      position: absolute;
-      top: 20px;
     }
-
-    .tile-text {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-    .tile {
-      height: calc(100vh - 40px); /* Subtract 40px for the top and bottom spacing */
-      width: calc(100vw - 40px); /* Subtract 40px for the left and right spacing */
-    }
-
-    .tile-qr {
-      height: calc(100% - 40px); /* Subtract 40px for the top and bottom spacing */
-      width: calc(100% - 40px); /* Subtract 40px for the left and right spacing */
-    }
-  }
-
   </style>
 </head>
 <body>
-  <div class="tile">
-    <div class="tile-qr">
-    </div>
-    <div class="tile-text">
-
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm10 col-md-8 col-lg-6">
+        <div class="card text-center" style="width: 25rem; border-radius: 10px;">
+          <div class="img-container">
+            <img class="card-img-top" src="./images/image-qr-code.png" alr="qr-code"/>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" >Improve your front-end skill by builiding project</h5>
+            <p class="card-text font-weight-normal">Scan the QR code to visit Frontedn Mentor and take your coding skills to next</p>  
+          </div>
+          </div>
+      </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </body>
 </html>
